@@ -4,8 +4,8 @@ from aiogram.filters import Command
 
 from repositories import MainRepository
 
-main_router = Router()
-repository = MainRepository()
+main_router: Router = Router()
+repository: MainRepository = MainRepository()
 
 
 @main_router.message(Command('start'))
